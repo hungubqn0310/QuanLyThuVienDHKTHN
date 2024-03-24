@@ -10,7 +10,9 @@ namespace QuanLyThuVienDHKTHN
 {
     internal class Themsuaxoa
     {
-        
+        //: Phương thức này trả về một đối tượng SqlConnection được sử dụng để kết nối đến cơ sở dữ liệu.
+        //Phương thức này được đánh dấu là protected, có nghĩa là nó chỉ có thể được truy cập từ các lớp con.
+
         protected SqlConnection getConnection()
         {
            
@@ -51,6 +53,10 @@ namespace QuanLyThuVienDHKTHN
             cmd = new SqlCommand(query, con);
             SqlDataReader sdr = cmd.ExecuteReader();
             return sdr;
+        }
+        public SqlConnection GetConnection()
+        {
+            return getConnection();
         }
         
     }

@@ -59,5 +59,11 @@ namespace QuanLyThuVienDHKTHN
                 txtPassword.Clear();
             }
         }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+            Form2 f2 = new Form2();
+            f2.Show();
+        }
     }
 }
